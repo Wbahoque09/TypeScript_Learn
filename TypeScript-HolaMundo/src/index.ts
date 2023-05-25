@@ -32,4 +32,12 @@ console.log(mensaje);
 
 let extincionDinosaurios: number = 76_000_000;
 let dinosaurioFavorito: string = "T-rex";
-let extintos = true; 
+let extintos = true;
+
+let mivariable;
+mivariable = "puerco feliz"
+mivariable = 42;
+
+function puercoFeliz(config:any) {
+    return config;
+}
