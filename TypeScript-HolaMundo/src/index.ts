@@ -41,3 +41,8 @@ mivariable = 42;
 function puercoFeliz(config:any) {
     return config;
 }
+
+// Parte de arreglos
+let animales: string[] = ["Puerco","Feliz","Felipe"];
+let gata: any[] = ["Seba","No",true,"Mon.."];
+// let cual: boolean[] = ["kaka",false,true,12]; reto del seba...
