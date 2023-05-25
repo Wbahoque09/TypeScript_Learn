@@ -4,3 +4,6 @@ let mensaje: string = "Hola Mundo"; // se asigna el tipo de variable
 
 // mensaje = 42;
 mensaje = "Puerco feliz";
+
+mensaje = "chao mundo";
+console.log(mensaje);
