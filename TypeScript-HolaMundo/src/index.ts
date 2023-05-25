@@ -7,3 +7,29 @@ mensaje = "Puerco feliz";
 
 mensaje = "chao mundo";
 console.log(mensaje);
+
+// Tipos nativos
+/**
+ * Tipos de JS
+ * number
+ * string
+ * boolean
+ * null
+ * undefined
+ * object
+ * function
+ * 
+ * Tipos TS
+ * any (no usarlo)
+ * unknown
+ * never
+ * arrays
+ * tuplas
+ * Enums
+ * 
+ * tipo inferidos
+ */
+
+let extincionDinosaurios: number = 76_000_000;
+let dinosaurioFavorito: string = "T-rex";
+let extintos = true; 
