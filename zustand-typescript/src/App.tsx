@@ -1,15 +1,23 @@
-import { useState } from 'react';
+import { useCounterStore } from './store/CounterStore';
 
 
+export const App = () => {
+  
+  // const count = useCounterStore((state) => state.count ); // Invocacion para manipulacion de datos
+  // const title = useCounterStore((state) => state.title ); // Invocacion para manipulacion de datos
 
-function App() {
-  const [count, setCount] = useState(0);
+  const values = useCounterStore((state) => ({
 
+    count: state.count,
+    title: state.title,
+
+  }))
+  console.log(values);
   return (
     <>
-      <div>Zustand App + TypeScript</div>
+      <div>
+        <h1></h1>
+      </div>
     </>
   )
 }
-
-export default App
