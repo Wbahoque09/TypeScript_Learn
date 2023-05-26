@@ -58,3 +58,18 @@ let tupla1: [number, string] = [1,"Puerco feliz"]; // Aqui debemos tener cuidado
 let tupla2: [number, Array<string>] = [1,["puerco feliz"]];
 // Notas: Tratar de mantener las tuplas con dos o tres datos, no mas de ahi, si queremos mas datos hay que averiguar otro caso que ayude a representar mejor est tipo de dato.
 
+// Enums
+const chica = "s";
+const mediana = "m";
+const grande = "l";
+const extragrande = "xl";
+
+// PascalCase
+enum Talla { Chica = "s", Mediana = "m", Grande = "l", ExtraGrande = "xl" };
+
+const variable1 = Talla.Grande;
+console.log(variable1);
+
+const enum LoadingState {Idle, Loading, Success, Error}
+
+const estado = LoadingState.Success;
