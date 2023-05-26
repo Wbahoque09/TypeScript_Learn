@@ -73,3 +73,45 @@ console.log(variable1);
 const enum LoadingState {Idle, Loading, Success, Error}
 
 const estado = LoadingState.Success;
+
+// Objeto
+const objeto = { id:1 } // 1RA FORMA
+// 1RA forma de trabajar objetos en typescript
+const objeto1: {
+    readonly id: number,
+    nombre: string,
+    // nombre1?: string, // Para que sea opcional y no marque error
+    talla: Talla, // Aqui asignamos un enum
+} = {
+    id: 1,
+    nombre: "Hola Mundo",
+    talla: Talla.ExtraGrande,
+}
+// objeto1.id=12; No deja por la propiedad readonly
+
+// 2DA forma de trabajar objetos en typescript
+type Direccion = { // Aqui demostramos como seguir trabajando el type dentro de otro type
+    numero: number,
+    calle: string,
+    pais: string
+}
+type Persona = {
+    readonly id: number,
+    nombre: string,
+    // nombre1?: string, // Para que sea opcional y no marque error
+    talla: Talla, // Aqui asignamos un enum
+    direccion: Direccion
+}
+
+const objeto2: Persona = {
+    id:2,
+    nombre: "Hola Mundo",
+    talla: Talla.Chica,
+    direccion: {
+        numero: 69,
+        calle: "La gata",
+        pais: "Colombia"
+    }
+}
+
+const arr: Persona[] = []; // Arreglo de objetos de persona
