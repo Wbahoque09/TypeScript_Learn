@@ -52,3 +52,9 @@ let nums2: Array<number> = [];
 
 // nums.map((x) => x.) // el autocompletado sugiere metodos del tipo de datos
 
+// Tuplas
+let tupla = [1,"puerco feliz"]; // En este caso el array toma un tipo de dato, pero no los dos.
+let tupla1: [number, string] = [1,"Puerco feliz"]; // Aqui debemos tener cuidado con esta tupla porque solo recibe el numero de deficiones que tenga definido, en este caso dos.
+let tupla2: [number, Array<string>] = [1,["puerco feliz"]];
+// Notas: Tratar de mantener las tuplas con dos o tres datos, no mas de ahi, si queremos mas datos hay que averiguar otro caso que ayude a representar mejor est tipo de dato.
+
