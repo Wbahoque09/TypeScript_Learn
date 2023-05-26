@@ -44,5 +44,11 @@ function puercoFeliz(config:any) {
 
 // Parte de arreglos
 let animales: string[] = ["Puerco","Feliz","Felipe"];
-let gata: any[] = ["Seba","No",true,"Mon.."];
+// let gata: any[] = ["Seba","No",true,"Mon.."];
 // let cual: boolean[] = ["kaka",false,true,12]; reto del seba...
+let nums: number[] = [1,2,3];
+let checks: boolean[] = [];
+let nums2: Array<number> = [];
+
+// nums.map((x) => x.) // el autocompletado sugiere metodos del tipo de datos
+
