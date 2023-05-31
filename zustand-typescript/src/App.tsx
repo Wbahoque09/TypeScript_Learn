@@ -1,4 +1,5 @@
 import { useCounterStore } from './store/CounterStore';
+import { shallow } from 'zustand/shallow'; // Shallow, con esto podemos comparar un objeto con otro objeto
 
 
 export const App = () => {
@@ -6,17 +7,17 @@ export const App = () => {
   // const count = useCounterStore((state) => state.count ); // Invocacion para manipulacion de datos
   // const title = useCounterStore((state) => state.title ); // Invocacion para manipulacion de datos
 
-  const values = useCounterStore((state) => ({
+  const { title, count} = useCounterStore((state) => ({
 
     count: state.count,
     title: state.title,
 
-  }))
-  console.log(values);
+  }), shallow)
+
   return (
     <>
       <div>
-        <h1></h1>
+        <h1>{title}: {count}</h1>
       </div>
     </>
   )
