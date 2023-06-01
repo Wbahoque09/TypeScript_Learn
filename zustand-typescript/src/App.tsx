@@ -17,7 +17,7 @@ export const App = () => {
   }), shallow)
 
   // const increment = useCounterStore(state => state.increment); // 1RA FORMA DE ACCEDER AL INCREMENT
-  const { increment, getPosts } = useCounterStore();
+  const { increment, getPosts, clearStore, multiply } = useCounterStore();
 
   const handleIncremento = () => {
     increment(5);
@@ -36,6 +36,14 @@ export const App = () => {
           onClick={handleIncremento}
         >
           Increment by:5
+        </button>
+
+        <button onClick={() => multiply(2)}>
+          multiplicar by 2
+        </button>
+
+        <button onClick={() => clearStore()}>
+          clear
         </button>
 
         <hr />
