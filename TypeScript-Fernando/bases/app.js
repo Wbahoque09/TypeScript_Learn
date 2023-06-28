@@ -1,10 +1,21 @@
 "use strict";
-const msg = "Hola mundo"; // Declaramos una constante y le damos el tipo de variable que queremos
-const hero = {
-    name: "Iroman",
-    age: 45,
-};
+// *****Introduccion******
+// const msg: string = "Hola mundo"; // Declaramos una constante y le damos el tipo de variable que queremos
+// const hero = {
+//     name: "Iroman",
+//     age: 45,
+// }
+// // hero.age = "50"; Aqui si da error convertir la propiedad del objeto, pero cabe aclarar que si transpila aun habiendo error
+// hero.age = 50; // Aqui si me vale la modificacion del objeto porque es el mismo tipo de dato 
+// console.log(hero.age + 1);
+// *****Tipo de datos******
+// let b:string;
+// const a:number = 10; Siempre acostumbrarse a declarar el tipo de dato
+// function sayHello ( msg: string ){ // msg se enceuntra tipo any, porque no ha sido declarada antes
+//     console.log(msg);
+// }
+(() => {
+    const a = 10;
+    console.log(a);
+})(); // Esta funcion es anonima y autoinvocable
 
-// hero.age = "50"; Empiezo cambiando una propiedad del objeto aqui en el js, no me da error convertir aqui esta propiedad del objeto
-
-console.log(hero.age + 1);
