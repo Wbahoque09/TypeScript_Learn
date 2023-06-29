@@ -18,4 +18,4 @@
     const a = 10;
     console.log(a);
 })(); // Esta funcion es anonima y autoinvocable
-// El objetivo de esta funcion anonima y autoinvocable es para que pueda crear mas archivos en el mismo proyecto y no generrar errores de scope global
+// El objetivo de esta funcion anonima y autoinvocable es para que pueda crear mas archivos en el mismo proyecto y no generrar errores de socpe global
