@@ -1,13 +1,22 @@
 
 // Objetos
-const batimovil = {
+
+type auto ={ 
+  carroceria: string;
+  modelo: string;
+  antibalas: boolean;
+  pasajeros: number;
+  disparar?: ()=> void;
+}
+
+const batimovil: auto = {
   carroceria: "Negra",
   modelo: "6x6",
   antibalas: true,
   pasajeros:4
 };
 
-const bumblebee = {
+const bumblebee: auto = {
   carroceria: "Amarillo con negro",
   modelo: "4x2",
   antibalas: true,
@@ -19,7 +28,33 @@ const bumblebee = {
 
 
 // Villanos debe de ser un arreglo de objetos personalizados
-const villanos = [{
+
+// Mi solucion
+// type villans = [{
+//     nombre: string,
+//     edad: number,
+//     mutante: boolean,
+//   },
+//   {
+//     nombre: string,
+//     edad: number,
+//     mutante: boolean,
+//   },
+//   {
+//     nombre: string,
+//     edad?: number,
+//     mutante: boolean,
+//   }
+// ]
+
+// Solucion Fernando
+type villans = {
+  nombre: string,
+  edad?: number,
+  mutante: boolean,
+}
+
+const villanos: villans[] = [{
   nombre:"Lex Luthor",
   edad: 54,
   mutante:false
@@ -35,18 +70,30 @@ const villanos = [{
 
 // Multiples tipos
 // cree dos tipos, uno para charles y otro para apocalipsis
-const charles = {
+
+type mutcharles = {
+  poder: string;
+  estatura: number;
+}
+
+type mutapocolis = {
+  lider: boolean;
+  miembros: string[]
+}
+
+const charles: mutcharles = {
   poder:"psiquico",
   estatura: 1.78
 };
 
-const apocalipsis = {
+const apocalipsis: mutapocolis = {
   lider:true,
   miembros: ["Magneto","Tormenta","Psylocke","Angel"]
 }
 
 // Mystique, debe poder ser cualquiera de esos dos mutantes (charles o apocalipsis)
-let mystique;
+
+let mystique: (mutapocolis | mutcharles);
 
 mystique = charles;
 mystique = apocalipsis;
