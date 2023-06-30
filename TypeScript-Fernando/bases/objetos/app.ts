@@ -68,6 +68,8 @@ const villanos: villans[] = [{
   mutante: true
 }];
 
+console.log("Pase por aqui");
+
 // Multiples tipos
 // cree dos tipos, uno para charles y otro para apocalipsis
 
@@ -90,6 +92,8 @@ const apocalipsis: mutapocolis = {
   lider:true,
   miembros: ["Magneto","Tormenta","Psylocke","Angel"]
 }
+
+console.log("Pase por aca");
 
 // Mystique, debe poder ser cualquiera de esos dos mutantes (charles o apocalipsis)
 

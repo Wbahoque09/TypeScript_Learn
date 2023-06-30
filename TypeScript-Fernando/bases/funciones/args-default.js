@@ -9,4 +9,4 @@
     const name = fullName("Tony", "Stank", true);
     console.log({ name });
 })();
-// Typescript recomienda que los parametros opcionales vayan de ultimo
+//# sourceMappingURL=args-default.js.map

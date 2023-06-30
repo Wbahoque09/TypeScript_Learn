@@ -4,8 +4,6 @@
     const greet = (name) => `Hola ${name}`;
     const saveTheWorld = () => `El mundo esta salvado`;
     let myFunction;
-    // let myFunction: () => string; Definicion tipo funcion de flecha con tipo de dato que retorna la funcion
-    // let myFunction: (a:number,b:number) => number; Tipo de funcion que se le declara tipo de datos en los argumentos (OBLIGATORIO)
     myFunction = 10;
     console.log(myFunction);
     myFunction = addNumbers;
@@ -15,3 +13,4 @@
     myFunction = saveTheWorld;
     console.log(myFunction());
 })();
+//# sourceMappingURL=function-type.js.map

@@ -6,3 +6,4 @@
     };
     console.log(typeof (returnName));
 })();
+//# sourceMappingURL=functions.js.map

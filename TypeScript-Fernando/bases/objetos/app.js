@@ -1,5 +1,4 @@
 "use strict";
-// Objetos
 const batimovil = {
     carroceria: "Negra",
     modelo: "6x6",
@@ -28,6 +27,7 @@ const villanos = [{
         edad: undefined,
         mutante: true
     }];
+console.log("Pase por aqui");
 const charles = {
     poder: "psiquico",
     estatura: 1.78
@@ -36,7 +36,8 @@ const apocalipsis = {
     lider: true,
     miembros: ["Magneto", "Tormenta", "Psylocke", "Angel"]
 };
-// Mystique, debe poder ser cualquiera de esos dos mutantes (charles o apocalipsis)
+console.log("Pase por aca");
 let mystique;
 mystique = charles;
 mystique = apocalipsis;
+//# sourceMappingURL=app.js.map

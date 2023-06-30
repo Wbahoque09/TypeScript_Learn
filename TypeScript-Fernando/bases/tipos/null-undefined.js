@@ -1,6 +1,6 @@
 "use strict";
 (() => {
-    // let nada: undefined = undefined;
-    let nada = undefined; // De esta manera se puede definir variables de dos tipos de datos.
+    let nada = undefined;
     console.log(nada);
 })();
+//# sourceMappingURL=null-undefined.js.map

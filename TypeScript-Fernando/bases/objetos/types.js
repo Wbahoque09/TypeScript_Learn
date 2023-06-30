@@ -1,10 +1,5 @@
 "use strict";
 (() => {
-    // let flash: {name:string, age?:number, powers: string[], getName?:()=>string} = {
-    //     name: "Barry Allen",
-    //     age: 24,
-    //     powers: ["Super velocidad","Viajar en el tiempo"],
-    // } Objeto de ej, antes de type
     let flash = {
         name: "Barry Allen",
         age: 24,
@@ -19,4 +14,4 @@
         }
     };
 })();
-// type = Es una palabra reservada en TS que se usa para definir un tipo (posiblemente objeto)
+//# sourceMappingURL=types.js.map
