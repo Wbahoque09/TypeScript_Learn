@@ -6,7 +6,7 @@ const sumar = ( a:number, b:number ): number => {
 const contar = ( heroes: string[] ): number => {
   return heroes.length;
 }
-const superHeroes = ["Flash", "Arrow", "Superman", "Linterna Verde"];
+const superHeroes: string[] = ["Flash", "Arrow", "Superman", "Linterna Verde"]; // Me falto
 contar(superHeroes);
 
 //Parametros por defecto
@@ -30,6 +30,6 @@ const personas = unirheroes(["Batman","Superman","Mujer Maravilla","Flash"]);
 const noHaceNada = ( numero:number, texto:string, booleano:boolean, arreglo:string[] ): void => {}
 
 // Crear el tipo de funcion que acepte la funcion "noHaceNada"
-let noHaceNadaTampoco;
+let noHaceNadaTampoco: (n:number, s:string, b:boolean, a:string[]) => void; // Me falto
 noHaceNadaTampoco = noHaceNada;
 console.log(noHaceNadaTampoco(1,"Papagayo",true,["Kevin"]));
