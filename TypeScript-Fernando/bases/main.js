@@ -1,11 +1,17 @@
 "use strict";
 (() => {
     class Avenger {
+        static getavAge() {
+            return this.name;
+        }
         constructor(name, team, realName, avgAge = 55) {
             this.name = name;
             this.team = team;
             this.realName = realName;
             Avenger.avAge = avgAge;
+        }
+        bio() {
+            return `${this.name} (${this.team})`;
         }
     }
     Avenger.avAge = 35;
