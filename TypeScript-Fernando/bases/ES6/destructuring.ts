@@ -25,4 +25,15 @@
 
     // printAvenger( avengers );
 
+    // Desustructuracion Arrays
+
+    const avengersArr: string[] = ["Cap. America", "Ironman", "Hulk"];
+
+    const [ captain, ironman,  ] = avengersArr;
+
+    console.log({ironman, captain});
+
 })()
+
+// En la desestructuracion de objetos se desustructura por la poriedad (obligatoriamente)
+// En la desestructuracion de arrays se puede poner cualquier nombre porque se desestructura por numero indice
