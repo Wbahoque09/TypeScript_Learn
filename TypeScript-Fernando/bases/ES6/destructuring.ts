@@ -31,7 +31,7 @@
 
     const [ captain, ironman,  ] = avengersArr;
 
-    console.log({ironman, captain});
+    // console.log({ironman, captain});
 
 })()
 
