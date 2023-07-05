@@ -15,6 +15,21 @@
     };
 })();
 (() => {
+    class Mutant {
+        constructor() {
+            this.age = 1;
+            this.name = "";
+            this.realName = "";
+        }
+        mutantPower(id) {
+            if (id !== 1) {
+                return true;
+            }
+            return false;
+        }
+    }
+})();
+(() => {
     const client = {
         name: "Fernando",
         getFullAddress() {
