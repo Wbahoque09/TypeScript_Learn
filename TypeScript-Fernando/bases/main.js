@@ -70,4 +70,24 @@
     const wolverine = new Xmen("Wolverine", "Logan", true);
     wolverine.fullName = "Papagayo";
 })();
+(() => {
+    class Apocalipsis {
+        constructor(name) {
+            this.name = name;
+        }
+        static callApocalipsis() {
+            if (!Apocalipsis.intance) {
+                Apocalipsis.intance = new Apocalipsis("Nombre Creado");
+            }
+            return Apocalipsis.intance;
+        }
+        changeName(newName) {
+            this.name = newName;
+        }
+    }
+    const apocalipsis1 = Apocalipsis.callApocalipsis();
+    const apocalipsis2 = Apocalipsis.callApocalipsis();
+    const apocalipsis3 = Apocalipsis.callApocalipsis();
+    apocalipsis1.changeName("Xavier");
+})();
 //# sourceMappingURL=main.js.map
