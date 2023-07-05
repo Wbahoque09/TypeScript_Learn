@@ -14,4 +14,27 @@
         }
     };
 })();
+(() => {
+    const client = {
+        name: "Fernando",
+        getFullAddress() {
+            return "Hola Mundo";
+        },
+        age: 25,
+        address: {
+            id: 50600,
+            zip: "MD0 AFR",
+            city: "Madagascar"
+        }
+    };
+    const client2 = {
+        age: 20,
+        name: "Marcela",
+        address: {
+            city: "Dakkota N",
+            id: 521,
+            zip: "YZ0 LAK",
+        }
+    };
+})();
 //# sourceMappingURL=main.js.map
