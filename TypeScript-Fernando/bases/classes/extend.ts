@@ -6,7 +6,7 @@
             public name: string,
             public realName: string,
         ){
-            console.log("Constructor Avenger llamado!");
+            // console.log("Constructor Avenger llamado!");
         }
 
         protected getFullname() { // Nuevo tipo de metodo, el protected permite acceder desde clases hijas a la clase padre
@@ -21,17 +21,35 @@
             public isMutant: boolean // Propiedad de la clase hija
         ){
             super( name, realName );
-            console.log("Constructor Xmen llamado");
+            // console.log("Constructor Xmen llamado");
         }
 
+        // get es un metodo, debe retornar algo obligatoriamente, no recibe ningun argumento
+        get fullName() { 
+            return `${ this.name } - ${ this.realName }`;
+        }
+
+        // set es otro metodo, recibe un argumento(obligatoriamente), puede tener mismo nombre de un get, no retorna nada
+        set fullName( name: string ) {
+
+            if (name.length < 3) {
+                throw new Error("El nombre debe ser mayor de 3 letras");
+            }
+
+            this.name = name;
+        } 
+
         getFullnameDesdeXmen() {
-            console.log( super.getFullname() )
+            // console.log( super.getFullname() );
         }
     }
 
     const wolverine = new Xmen("Wolverine","Logan", true);
-    console.log(wolverine);
-    wolverine.getFullnameDesdeXmen();
+
+    wolverine.fullName = "Papagayo";
+
+    // console.log(wolverine.fullName);
+    // wolverine.getFullnameDesdeXmen();
 
     // const newAvenger = new Avenger("J","W");
     // newAvenger
