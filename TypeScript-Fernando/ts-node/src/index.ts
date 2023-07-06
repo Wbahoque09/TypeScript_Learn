@@ -16,10 +16,8 @@ const ironman = new Hero("Tony Stank",1,35); // (3) Para acceder a lo que se est
 // printObject("Hello World");
 
 console.log( genericFunction(3.141618).toFixed(2) );
-// console.log( genericFunction( new Date() ).toFixed(2) );
-// console.log( genericFunction( "Hola Mundo" ).toFixed(2) );
-
-
+console.log( genericFunction( new Date() ).getDate() );
+console.log( genericFunction( "Hola Mundo" ).length );
 
 
 
