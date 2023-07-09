@@ -9,7 +9,7 @@ const printToConsoleConditional = ( print: boolean = false ):Function => { // Se
     return () => {}
 }
 
-const bloquarPropotipo = function( constructor: Function ) {
+const bloquarPropotipo = function( constructor: Function ) { // Funcion que tiene metodos seal para impedir modificar el prototype del objeto
     Object.seal( constructor )
     Object.seal( constructor.prototype );
 }
