@@ -8,5 +8,8 @@ const charmander = new Pokemon('Charmander');
 
 // console.log( charmander.savePokemonToDB(19) );
 
-charmander.savePokemonToDB(19);
+// charmander.savePokemonToDB(19);
+
+charmander.publicApi = 'https://fernando-herrera.com';
+console.log( charmander );
 

@@ -14,8 +14,8 @@ const bloquarPropotipo:Function = function( constructor: Function ) { // Funcion
     Object.seal( constructor.prototype );
 }
 
-function CheckValidPokemonId() { // Funcion que retorna otra funcion
-    return function ( target: any, propertyKey: string, descriptor: PropertyDescriptor ){ // Funcion que tiene argumentos para validar informacion
+function CheckValidPokemonId(): Function { // Funcion que retorna otra funcion
+    return function ( target: any, propertyKey: string, descriptor: PropertyDescriptor ){ // Funcion que tiene argumentos para validar informacion, esta funcion decoradora sirve para metodos solamente
         
         const originalMethod = descriptor.value;
 
@@ -30,10 +30,33 @@ function CheckValidPokemonId() { // Funcion que retorna otra funcion
     }
 }
 
+function readonly( isWritable: boolean = true ):Function { // Esta funcion decoradora sirve solo para proiedades
+    return function(target: any, propertyKey: string ){
+        
+        const descriptor: PropertyDescriptor = {
+            get() {
+                console.log( this );
+                return 'Fernando';
+            },
+            set( this, val ){
+                // console.log(this, val );
+                Object.defineProperty( this, propertyKey, {
+                    value: val,
+                    writable: !isWritable,
+                    enumerable: false
+                })
+            }
+        }
+        
+        return descriptor;
+    }
+}
+
 @bloquarPropotipo
 @printToConsoleConditional( false ) // decorador, para su creacion se pone el arroba y se escribe el nombre de la funcion decoradora
 export class Pokemon {
 
+    @readonly()
     public publicApi: string = 'https://pokeapi.co';
 
     constructor(
