@@ -4,7 +4,9 @@ import { Pokemon } from './decorators/pokemon-class';
 
 const charmander = new Pokemon('Charmander');
 
-(Pokemon.prototype as any).customName = 'Pikachu'; // Prueba de que el decorador de bloqueo si esta funcionando
+// (Pokemon.prototype as any).customName = 'Pikachu'; // Prueba de que el decorador de bloqueo si esta funcionando
 
-console.log( charmander );
+// console.log( charmander.savePokemonToDB(19) );
+
+charmander.savePokemonToDB(19);
 
